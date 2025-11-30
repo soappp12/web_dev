@@ -13,11 +13,15 @@
     function change(){
     document.getElementById("image"). src="https://servers4gamers.com/blog/wp-content/uploads/2025/06/sheep1-1110x652.webp"
     }
+     function resetImage() {
+            document.getElementById("image").src =
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBR3dLf9WP2utit5LwKCKdlf88_vr4c1Vzsg&s";
+        }
 </script>
 
 <body>
     <h1>What you can do in Minecraft</h1>
-    <img id= "image" alt= "pic" onmouseover= "change ()"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBR3dLf9WP2utit5LwKCKdlf88_vr4c1Vzsg&s"/>
+    <img id= "image" alt= "pic" onmouseover= "change()" onmouseout="resetImage()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBR3dLf9WP2utit5LwKCKdlf88_vr4c1Vzsg&s"/>
     <p>You can start out by doing simple tasks like mining, getting food, and building your house.</p>
     <p>You can also take resources you found and build other things using them to get various new things!!</p>
 </body>
