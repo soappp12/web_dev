@@ -9,7 +9,7 @@
     <title>Moab</title>
     <style>
         body{
-                background-color: rgb(255, 212, 156);
+                background-color: rgba(206, 97, 25, 0.493);
                 text-align: center;
                 color:rgba(0, 0, 0, 0.87);
                 font-size: 20px;
@@ -19,26 +19,52 @@
                 
             }
             img{width: 500px; height: auto;}
-
             #content-wrapper {
             display: flex;
             justify-content:center;
         }
-
+        button{
+            margin:10px;
+            padding: 10px;
+        }
 
     </style>
 </head>
 <body>
     <h1>Moab</h1>
     <img id= "image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpx9oXpqfYl5wT3s8or2Lpx9ZlB1mbjQaQQ&s">
-    <img src="https://annaeverywhere.com/wp-content/uploads/2021/09/rafting-in-moab.jpg"
-    <p><div id="content"> </div>Moab is a really fun place to go for vacation! There are national parks, really good places to eat, rafting and mountain biking!</p>
-    <p>Here are some places I would reccomend going to in Moab:</p>
+    <img src="https://annaeverywhere.com/wp-content/uploads/2021/09/rafting-in-moab.jpg">
+    <p>Moab is a really fun place to go for vacation! Especially in early spring or the summer, there are a lot of amazing things you can go to and see there! Theres also many fun activies you can do in the area while you visit!</p>
+    <p><div id="content-wrapper"></div>Here are some places I would reccomend going to in Moab that makes it worth going that other people love to go to!</p>
     <ul>
         <li>Arches National Park</li>
         <li>Dead Horse Point State Park</li>
         <li>Moab Giants</li>
         <li>Western River Expeditions</li>
     </ul>
+    <h1>Arches National Park</h1>
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyRJBdTKI1P7_at692vd5rvXmAWbZn24NE1T71PTgoae3AlsxA7Z36qM-Wo88P27kq0o_oDD-bSSYlv4j2kQcSbDANs07DtN3X-s8xNip-oOfXqPgXjQmMIoxd5SlOvuOepTJWn=s680-w680-h510-rw">
+    <p>Arches National Park has over 2000 stone arches! They also have unique rock-formations that people like to go see. Its a perfect place for photography of the scenery that is offered there.<br>They also have activities like hiking, camping, and stargazing that you can do there aswell!</br></p>
+    <h1>Dead Horse Point State Park</h1>
+    <img src="https://images.squarespace-cdn.com/content/v1/565f93a7e4b0a09598e29147/1614118840797-W42WA7X65K8HOSJAHD89/DSC02267.jpg">
+    <p>Dead Horse Point has lanscapes of canyons and an overlook to a gooseneck bend. When your looking over this bend, visitors can see the colorado river curving through the canyons, giving off a pretty view.<br>The park also has trails were people can go mountain biking and hiking that surrounds the river.</br></p>
+    <div id="extra" style="display:none;">
+        <h1>Moab Giants</h1>
+    </div>
+    <button id="toggleBtn">More</button>
+    <script>
+        const btn = document.getElementById("toggleBtn");
+const extra = document.getElementById("extra");
+
+btn.addEventListener("click", () => {
+  if (extra.style.display === "none" || extra.style.display === "") {
+    extra.style.display = "block";
+    btn.textContent = "Hide";
+  } else {
+    extra.style.display = "none";
+    btn.textContent = "Show More";
+  }
+});
+    </script>
 </body>
 </html>
